@@ -81,7 +81,7 @@ namespace AssetStudio
                 var m_MipsStripped = reader.ReadInt32();
             }
             m_TextureFormat = (TextureFormat)reader.ReadInt32();
-            if (reader.Game.Type.IsZZZCB2())
+            if (reader.Game.Type.IsZZZ())
             {
                 unk1 = reader.ReadInt32();
                 unk2 = reader.ReadInt32();

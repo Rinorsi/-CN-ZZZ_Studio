@@ -252,7 +252,7 @@ namespace AssetStudio
                 reader.Position = 0;
             }
             
-            if (reader.FileType == FileType.MhyFile && game.Type.IsZZZCB2())
+            if (reader.FileType == FileType.MhyFile && (game.Type.IsZZZCB2() || game.Type.IsZZZ()))
             {
                 reader.FileType = FileType.BlockFile;
             }

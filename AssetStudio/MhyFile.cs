@@ -265,7 +265,7 @@ namespace AssetStudio
         private void Descramble(Span<byte> input, int blockSize, int entrySize)
         {
             var roundedEntrySize = (entrySize + 0xF) / 0x10 * 0x10;
-            if (mhy.Name == "ZZZ_CB2")
+            if (mhy.Name == "ZZZ_CB2" || mhy.Name == "ZZZ")
             {
                DescrambleChunk(input.Slice(4, 16));
                string signature = Encoding.UTF8.GetString(input.Slice(4, 8));
